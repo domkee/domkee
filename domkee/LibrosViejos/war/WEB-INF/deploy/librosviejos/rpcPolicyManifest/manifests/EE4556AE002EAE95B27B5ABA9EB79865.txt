@@ -1,0 +1,2 @@
+serviceClass: com.fer.librosViejos.client.services.userfb.ServiceFBUser
+path: C83EEE2143C1E77EE59613C5F0D32C76.gwt.rpc

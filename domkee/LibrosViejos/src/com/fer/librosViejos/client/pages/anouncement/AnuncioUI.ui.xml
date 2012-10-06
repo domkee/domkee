@@ -1,0 +1,46 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	 xmlns:fb="urn:import:com.fer.t1.client.widgets.fb">
+	<ui:style>
+		.fbComment
+		{
+			width:500px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+
+		}
+		.marg
+		{
+			margin-top:20px;
+
+		}
+		.fbLike
+		{
+			float:right;
+
+		}
+		
+	</ui:style>
+	<g:HTMLPanel>
+	        <div class="page-header" style="margin-top:10px">
+   				<h3 ui:field="txtNombre">Comprar un libro <small>   Contacta al dueno dando click en "Contactar"</small></h3>
+    		</div>
+	    	<img ui:field="img" src="images/libro.png" ></img>
+	        <h4 ui:field="txtDescripcion"> la descripcion de este libro es muyt abcana la descripcion de este libro es muyt abcana la descripcion de este libro es muyt abcana la descripcion de este libro es muyt abcana </h4>
+	        <div class="row {style.marg}">
+	        	<div class="span2">
+	        		<g:Button styleName="btn btn-primary" ui:field="btnContactar"> Contactar </g:Button>
+	        	</div>
+	        	<div >
+	        		<fb:FBLike ui:field="fbLike" url="librosviejos.appspot.com/#anuncio" styleName="{style.fbLike}"></fb:FBLike>
+	        	</div>
+	        </div>
+	        <legend class="marg">Comentarios</legend>
+	        <fb:FBComment ui:field="fbComment" styleName="{style.fbComment}" url="librosviejos.appspot.com/#anuncio" numPosts="5" pixelWidth="500"></fb:FBComment>
+	</g:HTMLPanel>
+</ui:UiBinder> 
+
+
+

@@ -1,0 +1,36 @@
+/*
+
+General CSS
+
+*/
+
+.imageNormal, .imageSelected
+{
+	opacity:0.6;
+	cursor: pointer;
+	background-color: black;
+	margin: 3px;
+	height:150px;
+}
+
+.imageSelected, .imageNormal:HOVER
+{
+	opacity:1;
+}
+
+
+
+.popupGlass
+ {
+ 	
+ 	background-color: black;
+ 	opacity:0.9;
+ 	z-index: 250;
+ }
+ .popup
+ {
+ 	z-index: 251;
+ }
+
+
+

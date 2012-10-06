@@ -1,0 +1,23 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui" >
+
+    <ui:style>
+    </ui:style>
+
+    <g:HTMLPanel>
+        <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit text-error">
+        <h1  >Oops!: La pagina solicitada no fue encontrada en nuestros servidores :(</h1>
+        <h4 style="margin-top:40px">Esto puede ser en parte por varias razones</h4>
+        
+        <ul>
+            <li> <h3>El servidor no esta funcionando </h3> </li>
+            <li> <h3>El libro que estas buscando ya fue comprado o removido del sistema</h3> </li>
+            <li> <h3>Nuestros ingenieros estan deprimidos </h3></li>
+        </ul>
+
+      </div>
+    </g:HTMLPanel>
+
+</ui:UiBinder>

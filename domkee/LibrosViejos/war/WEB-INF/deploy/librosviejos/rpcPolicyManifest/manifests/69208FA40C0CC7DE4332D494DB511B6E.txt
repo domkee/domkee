@@ -1,0 +1,2 @@
+serviceClass: com.fer.librosViejos.client.services.imageSearch.ImageSearchService
+path: 00CAFB673035501CE154C92E9B7920FE.gwt.rpc

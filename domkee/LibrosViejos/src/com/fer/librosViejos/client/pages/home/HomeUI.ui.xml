@@ -1,0 +1,45 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.marg
+		{
+			margin-top: 40px;
+		}
+		.fixedNav
+		{
+			position: fixed;
+			top:50px;
+		}
+	</ui:style>
+	<g:HTMLPanel styleName="{style.marg}">
+	    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav {style.fixedNav} ">
+            <ul class="nav nav-list">
+              <li class="nav-header">Anuncios</li>
+              <li ui:field = "liMisAnuncios" class="active"><g:Anchor href="#home" ui:field="aMisAnuncios">Mis Anuncios</g:Anchor></li>
+              <li ui:field = "liOtrosAnuncios"><g:Anchor href="#home" ui:field="aOtrosAnuncios">Anuncios contactados</g:Anchor></li>
+              <li class="nav-header">Perfil</li>
+              <li ui:field = "liActualizarUniversidad"><g:Anchor href="#home" ui:field="aActualizarUniversidad">Actualizar Universidad</g:Anchor></li>
+              <li ui:field = "liProfile"><g:Anchor href="#home" ui:field="aProfile">Perfil</g:Anchor></li>
+              <li class="nav-header">Seguridad</li>
+              <li><g:Anchor href="#home">En construccion :)</g:Anchor></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+        	<g:HTMLPanel ui:field="tabPanel"></g:HTMLPanel>  
+        </div><!--/span-->
+      </div><!--/row-->
+
+     
+
+      <footer>
+        <p>&copy; LibrosViejos 2012</p>
+      </footer>
+
+    </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

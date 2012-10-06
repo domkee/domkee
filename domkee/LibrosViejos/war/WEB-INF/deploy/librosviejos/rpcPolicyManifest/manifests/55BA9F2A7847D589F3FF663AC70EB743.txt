@@ -1,0 +1,2 @@
+serviceClass: com.fer.librosViejos.client.services.anuncios.ServiceAnuncios
+path: 6AEBF70C4ADFB9CD5190269CE949A96C.gwt.rpc

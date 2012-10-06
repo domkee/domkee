@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <!-- Servlets -->
+    
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>LibrosViejos.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>ServiceAnuncios</servlet-name>
+  	<servlet-class>com.fer.librosViejos.server.services.anuncios.ServiceAnunciosImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServiceAnuncios</servlet-name>
+  	<url-pattern>/librosviejos/ServiceAnuncios</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>FBConnect</servlet-name>
+  	<servlet-class>com.fer.librosViejos.server.fb.connect.OAuthRedirect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FBConnect</servlet-name>
+  	<url-pattern>/fbConnect</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  	<servlet-name>FbRedirect</servlet-name>
+  	<servlet-class>com.fer.librosViejos.server.fb.connect.RedirectUri</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FbRedirect</servlet-name>
+  	<url-pattern>/fbRedirect</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+  	<servlet-name>ServiceFBUser</servlet-name>
+  	<servlet-class>com.fer.librosViejos.server.services.userfb.ServiceFBUserImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServiceFBUser</servlet-name>
+  	<url-pattern>/librosviejos/ServiceFBUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ImageSearchService</servlet-name>
+  	<servlet-class>com.fer.librosViejos.server.services.imageSearch.ImageSearchServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ImageSearchService</servlet-name>
+  	<url-pattern>/librosviejos/ImageSearchService</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+      <filter-name>MainFilter</filter-name>
+      <filter-class>com.fer.librosViejos.server.filter.MainFilter</filter-class>
+  </filter>
+  
+<!--   <filter-mapping> -->
+<!--       <filter-name>MainFilter</filter-name> -->
+<!--       <url-pattern>*</url-pattern> -->
+<!--   </filter-mapping> -->
+
+</web-app>

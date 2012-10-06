@@ -1,0 +1,16 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+	    <div class="alert alert-info">
+	        <h4> Lo sentimos</h4>
+	        <br></br>
+	        <p>No hemos podido encontrar anuncios que coincidan con tu busqueda.<br></br>
+	        Si crees que alguno de tus amigos de facebook puede tener lo que estas buscando oprime el boton "Invitar"</p>
+	       	<g:Button ui:field="btnInvite" styleName="btn btn-primary">Invitar</g:Button>
+	    </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

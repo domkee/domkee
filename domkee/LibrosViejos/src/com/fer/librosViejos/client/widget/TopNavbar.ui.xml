@@ -1,0 +1,39 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a href="/index.html" class="brand">LibrosViejos</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li ui:field="liHome"><g:Anchor href="#home"><i class="icon-user icon-white"></i> Perfil</g:Anchor></li>
+              <li ui:field="liCrearAnuncio" ><g:Anchor ui:field="linkCrearAnuncio" href="#crearAnuncio" ><i class="icon-plus icon-white"> </i> Crear Anuncio</g:Anchor></li>
+              <li>
+              	<div class="navbar-search pull-left form-search">
+              	     <div class="input-append">
+						<g:TextBox ui:field="txtSearch" styleName="input-xlarge search-query"></g:TextBox>
+						<g:Button ui:field="btnSearch" styleName="btn btn-info"><i class="icon-search icon-white"> </i> Search</g:Button>
+					</div>
+   				</div>
+                  
+              </li>
+              <li ui:field="liContact"><a href="#contact" class="pull-right"><i class="icon-envelope icon-white"> </i> Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,43 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+
+	</ui:style>
+	<g:HTMLPanel>
+
+			<legend>Crear un anuncio</legend>
+			
+			
+				<div class="form-horizontal">
+		    		<div class="control-group">
+		    			<label class="control-label" for="txtName">Nombre</label>
+		    			<div class="controls">
+		    				<g:TextBox ui:field="txtName" styleName="input-xxlarge"  ></g:TextBox>
+		    			</div>
+		    		</div>
+		    		<div class="control-group">
+		    			<label class="control-label" for="txtPrice">Precio</label>
+		    			<div class="controls">
+		    				<input ui:field="txtPrice" class="input-xxlarge" type="text" placeholder="$$$ precio"></input>
+			    		</div>
+			    	</div>
+			    	<div class="control-group">
+		    			<label class="control-label" for="txtDesc">Descripcion</label>
+		    			<div class="controls">
+		    				<textarea ui:field="txtDesc" class="input-xxlarge"  placeholder="Describe brevemente tu anuncio" maxlenght="1000"></textarea>
+			    		</div>
+			    	</div>
+			    	<div class="control-group">
+		    			<label class="control-label" for="imagesPanel">Escoge una Imagen</label>
+		    			<div class="controls">
+		    				<g:SimplePanel ui:field="imagesPanel"></g:SimplePanel>
+		    			</div>
+			    	</div>
+			    	<g:Button ui:field="btnSend" styleName="btn btn-primary"> Enviar</g:Button>
+			    	
+		    	</div>
+				
+				
+	</g:HTMLPanel>
+</ui:UiBinder> 
